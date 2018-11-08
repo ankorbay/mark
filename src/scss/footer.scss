@@ -1,0 +1,103 @@
+@import "partials/params";
+@import "partials/mixins";
+
+
+.footer {
+  background-color: $footer-bg-color;
+  color: $footer-color;
+  padding-bottom: 20px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:75px;
+    border-bottom: 2px solid $footer-color;
+  }
+
+  &__brand {
+    font-weight: bold;
+    color: #686868;
+  }
+
+  &__nav {
+    @include clear-list;
+    display: flex;
+    align-items: center;
+
+    & .nav__item {
+      font-size: 14px;
+      
+    }
+
+    & .nav__link {
+      text-transform: uppercase;
+      color: #686868;
+      transition: .3s all;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    padding: 20px 0;
+    line-height: 1.7;
+    font-size: 15px;
+  }
+
+  &__block {
+    width: (100% / 3);
+  }
+
+  &__text {
+    padding-right: 84px;
+    color: #686868;
+  }
+
+  &__map {
+    display: flex;
+    padding: 0 108px;
+    border-right: 0.2px solid #686868;
+    border-left: 0.2px solid #686868;
+  }
+
+  &__list {
+    @include clear-list;
+    width: 113px;
+
+    & .list__item {
+      padding: 5px;
+      &:hover {
+        color: #fff;
+        .list__link {
+          color: #fff;
+          margin-left: 10px;
+        }
+      }
+    }
+
+    & .list__icon {
+
+    }
+
+    & .list__link {
+      margin-left: 5px;
+      color: #686868;
+      font-weight: 300;
+      transition: .3s margin-left;
+    }
+  }
+
+  &__contact {
+    & .contact__icon {
+      margin-right: 7px;
+    }
+    & .contact__item {
+      margin-left: 83px;
+      color: #686868;
+      margin-bottom: 5px;
+    }
+  }
+}

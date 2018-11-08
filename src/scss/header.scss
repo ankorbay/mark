@@ -1,0 +1,33 @@
+@import "partials/params";
+@import "partials/mixins";
+@import url("https://use.typekit.net/dor5aco.css");
+
+@font-face {
+    font-family: 'Georgia-Italic';
+    src: url(/fonts/Georgia-Italic.woff);
+}
+
+.header {
+    @include flex-center;
+    flex: 1 0 auto;
+    background: url('/img/header_bg.jpg') no-repeat;
+    background-size: cover;
+    color: #fff;
+
+    &__title {
+        position: relative;
+        justify-content: start;
+        top: 332px;
+        font-family: myriad-pro, sans-serif;
+        font-size: 72px;
+    }
+
+    &__subtitle {
+        position: relative;
+        top: 339px;
+        font-family:'Georgia-Italic', sans-serif;
+        font-style: italic;
+        font-size: 32px;
+        line-height: 47px;
+    }
+}
