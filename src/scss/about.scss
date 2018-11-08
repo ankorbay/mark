@@ -4,16 +4,20 @@
 .about {
   padding: 40px;
   background-color: #fff;
+  min-height: 318px;
+  align-content: center;
 
   &__content {
     display: flex;
-    padding-top: 20px;
+    padding-top: 4em;
   }
 
   &__text {
-    width: 50%;
+    width: 35%;
+    padding-right: 6em;
     opacity: .7;
-    font-size: 14px;
+    font-size: 18px;
+    font-weight: 200;
     border-right: 3px dotted $buy-border-color;
   }
 
@@ -26,6 +30,7 @@
   &__imgs {
     display: flex;
     justify-content: space-around;
+    margin: 0 auto;
     width: 50%;
   }
 
@@ -47,7 +52,7 @@
       margin-bottom: 5px;
     }
     & .profile__soc {
-      align-items: center;
+    
     }
     & .profile__icon {
       opacity: .6;
